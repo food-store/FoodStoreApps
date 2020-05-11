@@ -16,4 +16,22 @@ require("jquery")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-//require main
+//= require main
+//= require bootstrap/js/bootstrap.bundle
+//= require bootstrap/js/bootstrap.bundle.min
+//= require bootstrap/js/bootstrap.min
+//= require bootstrap/js/bootstrap
+
+//= require isotope-layout/isotope.pkgd
+//= require isotope-layout/isotope.pkgd.min
+
+//= require jquery/jquery.min
+//= require jquery-sticky/jquery.sticky
+//= require jquery.easing/jquery.easing.min
+
+//= require owl.carousel/owl.carousel
+//= require owl.carousel/owl.carousel.min
+
+
+//= require venobox/venobox.js
+//= require venobox/venobox.min
