@@ -1,0 +1,34 @@
+ <%if client_signed_in?%>
+
+
+ <ul >
+  <li><%= link_to "Se deconnecter", destroy_client_session_path, method:"delete" %></li> 
+</ul>
+
+
+<% else %>
+
+<ul>
+  <li><%= link_to "Se connecter", new_client_session_path%></li> 
+  <li><%= link_to "S'inscrire", new_client_registration_path%></li> 
+</ul>
+<% end %>
+
+
+<hr> 
+<h1>Liste des restaurants</h1>
+
+<div>
+ <% @restaurants.each do |resto|%>
+<ul>
+	<li>Nom :  <%= resto.name %></li>
+	<li>Description :  "<%= resto.description %>"</li>
+	<li>Adresse :  <%= resto.adress%></li>
+	<button><a href="<%= resto_path(resto.id) %>">Visiter</a></button>
+</ul>
+
+  <%end%>
+
+
+
+</div>

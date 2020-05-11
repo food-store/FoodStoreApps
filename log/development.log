@@ -1,0 +1,638 @@
+  [1m[35m (2566.1ms)[0m  [1m[35mCREATE DATABASE "FOODSTORE_development" ENCODING = 'unicode'[0m
+  [1m[35m (1087.4ms)[0m  [1m[35mCREATE DATABASE "FOODSTORE_test" ENCODING = 'unicode'[0m
+  [1m[35m (304.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (129.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5990556689164916190)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateClients (20200507120820)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (142.1ms)[0m  [1m[35mCREATE TABLE "clients" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (48.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_clients_on_email" ON "clients"  ("email")[0m
+  [1m[35m (37.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_clients_on_reset_password_token" ON "clients"  ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200507120820"]]
+  [1m[35m (13.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-07 12:13:16.563896"], ["updated_at", "2020-05-07 12:13:16.563896"]]
+  [1m[35m (22.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5990556689164916190)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin" for 127.0.0.1 at 2020-05-07 15:23:00 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:23:05 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 33.7ms | Allocations: 190)
+Completed 200 OK in 48ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 975)
+
+
+Started GET "/clients/sign_up" for 127.0.0.1 at 2020-05-07 15:26:33 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 204)
+  Rendered /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 521)
+  Rendered /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 184.1ms | Allocations: 8810)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/amboara/FOODSTORE/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.43.0
+Time: 4796ms
+Built at: 2020-05-07 15:26:43
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 10240ms (Views: 10216.1ms | ActiveRecord: 8.0ms | Allocations: 29559)
+
+
+Started POST "/clients" for 127.0.0.1 at 2020-05-07 15:26:56 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"okt8ACj1bKpVMtVu7RvqnOmoIkgovI/C8O0kJRFwN2eeIcS8rlws/jmkjTtOluPdtQhTpP8b5gpxzTezrPCzjQ==", "client"=>{"email"=>"rakotomenja@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mClient Exists? (39.9ms)[0m  [1m[34mSELECT 1 AS one FROM "clients" WHERE "clients"."email" = $1 LIMIT $2[0m  [["email", "rakotomenja@gmail.com"], ["LIMIT", 1]]
+  [1m[36mClient Create (10.2ms)[0m  [1m[32mINSERT INTO "clients" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "rakotomenja@gmail.com"], ["encrypted_password", "$2a$11$cpRImfIe7/V505INaeLX9eBxx/J6K8eNMdfyNFxJyxux7eBCZHVpq"], ["created_at", "2020-05-07 12:26:57.284757"], ["updated_at", "2020-05-07 12:26:57.284757"]]
+  [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 381ms (ActiveRecord: 65.9ms | Allocations: 10811)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:26:57 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 28.5ms | Allocations: 189)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 954)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:30:35 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2020-05-07 15:30:38 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5990556689164916190)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateStaticPages (20200507122816)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (106.5ms)[0m  [1m[35mCREATE TABLE "static_pages" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200507122816"]]
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5990556689164916190)[0m
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:30:39 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.0ms | Allocations: 11579)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:31:49 +0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3520)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:41:04 +0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:1
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 6751)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 24.6ms | ActiveRecord: 10.0ms | Allocations: 11159)
+
+
+Started DELETE "/clients/sign_out" for 127.0.0.1 at 2020-05-07 15:41:09 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EbGNUA1RlEIaRYVseI6AT4TMJctYjKN1mAWvoQO0VPgt2zXsi/jUFnbT3TnbA4kO2GxUJ48ryr0ZJbw3vjTQEg=="}
+  [1m[36mClient Load (0.6ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.6ms | Allocations: 3003)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:41:09 +0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3523)
+
+
+Started GET "/clients/sign_in" for 127.0.0.1 at 2020-05-07 15:41:15 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 17.9ms | Allocations: 601)
+  Rendered /home/amboara/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 95.4ms | Allocations: 2693)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.0ms | Allocations: 7447)
+
+
+Started POST "/clients/sign_in" for 127.0.0.1 at 2020-05-07 15:41:19 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8OrQRgmhzqIAWQiHpGv5Bh7R86j0kZi1xIsWcrayjO4WaDFacXbPNyVXCkwTxhrNh3NgJ/qGHD6kBRwCoVOIFA==", "client"=>{"email"=>"rakotomenja@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mClient Load (0.8ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."email" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["email", "rakotomenja@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 213ms (ActiveRecord: 0.8ms | Allocations: 4113)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:41:19 +0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  [1m[36mClient Load (0.6ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/static_pages/index.html.erb:1
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.6ms | Allocations: 4378)
+
+
+Started DELETE "/clients/sign_out" for 127.0.0.1 at 2020-05-07 15:41:34 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B9Jr6hTeGJ3ytiB19rpl2bPxfFbwftSZi9wKzUEvrEJXou4EKtgpCrG2VCLm7/ZADS6wYBnXXqZuu9jCGx3eMg=="}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms | Allocations: 2160)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:41:34 +0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3506)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:41:36 +0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3503)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:51:53 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2020-05-07 15:51:56 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5990556689164916190)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRestos (20200507124859)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (300.8ms)[0m  [1m[35mCREATE TABLE "restos" ("id" bigserial primary key, "name" character varying, "description" character varying, "adress" character varying, "star" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200507124859"]]
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5990556689164916190)[0m
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:51:56 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 331)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.0ms | Allocations: 13023)
+
+
+Started GET "/resto/new" for 127.0.0.1 at 2020-05-07 15:52:12 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/resto/new"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/restos/new" for 127.0.0.1 at 2020-05-07 15:52:30 +0300
+Processing by RestosController#new as HTML
+  Rendering restos/new.html.erb within layouts/application
+  Rendered restos/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4162)
+
+
+Started GET "/restos/index" for 127.0.0.1 at 2020-05-07 15:52:36 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3680)
+
+
+Started GET "/restos/create" for 127.0.0.1 at 2020-05-07 15:52:45 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"create"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 3465)
+
+
+Started GET "/restos/create" for 127.0.0.1 at 2020-05-07 15:53:48 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"create"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/restos/creat" for 127.0.0.1 at 2020-05-07 15:53:50 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"creat"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3452)
+
+
+Started GET "/restos/" for 127.0.0.1 at 2020-05-07 15:53:54 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  Rendered restos/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3676)
+
+
+Started GET "/restos/" for 127.0.0.1 at 2020-05-07 15:54:03 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  Rendered restos/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3459)
+
+
+Started GET "/restos/1" for 127.0.0.1 at 2020-05-07 15:54:05 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3450)
+
+
+Started GET "/restos/1" for 127.0.0.1 at 2020-05-07 15:54:32 +0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 15.5ms | Allocations: 201)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 216ms (Views: 165.2ms | ActiveRecord: 0.0ms | Allocations: 12190)
+
+
+Started GET "/restos/" for 127.0.0.1 at 2020-05-07 15:54:36 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  Rendered restos/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3688)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:54:40 +0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 363)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 4475)
+
+
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mResto Create (1.5ms)[0m  [1m[32mINSERT INTO "restos" ("name", "description", "adress", "star", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Colbert"], ["description", "jdsdhjhsqdg hs dhsg h hd gddh g dgh fhgdsfh ghf dhf hfd k k fd"], ["adress", "Anosy Antananarivo"], ["star", 4], ["created_at", "2020-05-07 12:57:15.028785"], ["updated_at", "2020-05-07 12:57:15.028785"]]
+  [1m[35m (24.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mResto Load (0.9ms)[0m  [1m[34mSELECT "restos".* FROM "restos" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:57:59 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  Rendered restos/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3572)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:58:34 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  Rendered restos/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 336)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 4813)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 15:59:06 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  Rendered restos/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 4788)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 16:03:17 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.9ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 41.4ms | Allocations: 6168)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 41.5ms | ActiveRecord: 8.2ms | Allocations: 10823)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 16:04:20 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.3ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1091)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 5585)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 16:04:36 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1091)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.4ms | Allocations: 5581)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 16:07:09 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.3ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 24.4ms | Allocations: 4068)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.3ms | Allocations: 5395)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"restos"}, missing required keys: [:id]):
+    24: 	<li>Nom :  <%= resto.name %></li>
+    25: 	<li>Description :  "<%= resto.description %>"</li>
+    26: 	<li>Adresse :  <%= resto.adress%></li>
+    27: 	<button><a href="<%= resto_path %>">Visiter</a></button>
+    28: </ul>
+    29: 
+    30:   <%end%>
+  
+app/views/restos/index.html.erb:27
+app/views/restos/index.html.erb:22
+Started GET "/" for 127.0.0.1 at 2020-05-07 16:07:46 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1134)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.5ms | Allocations: 5679)
+
+
+Started GET "/restos/1" for 127.0.0.1 at 2020-05-07 16:07:48 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 3669)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 16:07:56 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 826)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.5ms | Allocations: 4299)
+
+
+Started GET "/restos/1" for 127.0.0.1 at 2020-05-07 16:07:58 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 3459)
+
+
+Started GET "/restos/3" for 127.0.0.1 at 2020-05-07 16:08:03 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 3469)
+
+
+Started GET "/restos/1" for 127.0.0.1 at 2020-05-07 16:08:10 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3460)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-07 16:08:19 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 818)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.5ms | Allocations: 4274)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-11 16:52:59 +0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (1.0ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 52.0ms | Allocations: 6340)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 217ms (Views: 129.3ms | ActiveRecord: 24.1ms | Allocations: 14269)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-11 16:53:03 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 836)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 4387)
+
+
+Started GET "/restos/1" for 127.0.0.1 at 2020-05-11 16:53:05 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 36.4ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms | Allocations: 3763)
+
+
+Started GET "/restos/1" for 127.0.0.1 at 2020-05-11 16:53:11 +0300
+Processing by RestosController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restos/show.html.erb within layouts/application
+  Rendered restos/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3540)
+
+
