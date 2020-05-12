@@ -789,3 +789,2672 @@ Processing by RestosController#index as HTML
 Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 1.2ms | Allocations: 5101)
 
 
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:24:02 +0300
+  [1m[35m (24.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (47.8ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 99.6ms | Allocations: 1720)
+Completed 500 Internal Server Error in 271ms (ActiveRecord: 66.4ms | Allocations: 8665)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate/animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:25:20 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 792)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms | Allocations: 7447)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:25:54 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (1.3ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 766)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.3ms | Allocations: 4440)
+
+
+  
+ActionView::Template::Error (couldn't find file '../vendor/animate/animate' under '/home/mavo/Documents/FoodStoreApps/app/assets/stylesheets' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:26:08 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.9ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 766)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.9ms | Allocations: 4524)
+
+
+  
+ActionView::Template::Error (couldn't find file './vendor/animate/animate' under '/home/mavo/Documents/FoodStoreApps/app/assets/stylesheets' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:26:23 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 756)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms | Allocations: 4939)
+
+
+  
+ActionView::Template::Error (couldn't find file 'vendor/animate/animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:26:36 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 756)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms | Allocations: 4917)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate/animate.min' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:26:52 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (1.2ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 766)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.2ms | Allocations: 4920)
+
+
+  
+ActionView::Template::Error (couldn't find file 'css/bootstrap-grid' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:20
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:27:06 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (1.0ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 756)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.0ms | Allocations: 4925)
+
+
+  
+ActionView::Template::Error (couldn't find file 'css/bootstrap-grid' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:20
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:28:57 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.7ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 756)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.7ms | Allocations: 4492)
+
+
+  
+ActionView::Template::Error (couldn't find file 'css/bootstrap-grid' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:20
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 18:29:11 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 756)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.5ms | Allocations: 4925)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate/animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 19:47:55 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.7ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 1720)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/mavo/Documents/FoodStoreApps/public/packs
+[Webpacker] warning You don't appear to have an internet connection. Try the --offline flag to use the cache for registry queries.
+
+[Webpacker] Hash: f91d3fd1de1b11614ca2
+Version: webpack 4.43.0
+Time: 13372ms
+Built at: 12/05/2020 19:48:16
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-12cab3a8265c13d3564e.js    843 KiB  application  [emitted] [immutable]  application
+js/application-12cab3a8265c13d3564e.js.map    899 KiB  application  [emitted] [dev]        application
+           js/main-13e913a1308548ec4c13.js    419 KiB         main  [emitted] [immutable]  main
+       js/main-13e913a1308548ec4c13.js.map    404 KiB         main  [emitted] [dev]        main
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-12cab3a8265c13d3564e.js js/application-12cab3a8265c13d3564e.js.map
+Entrypoint main = js/main-13e913a1308548ec4c13.js js/main-13e913a1308548ec4c13.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.26 KiB {application} [built]
+[./app/javascript/packs/main.js] 6.23 KiB {main} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+Completed 200 OK in 20740ms (Views: 20728.1ms | ActiveRecord: 2.6ms | Allocations: 52800)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 19:49:37 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 772)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.4ms | Allocations: 6931)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate/animate.css' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 19:50:02 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (1.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 785)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.4ms | Allocations: 7513)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate.css' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 19:50:32 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.6ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 766)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms | Allocations: 7437)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate.css' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:02:33 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.8ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 855)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.8ms | Allocations: 7865)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate.css' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:04:11 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 756)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.4ms | Allocations: 4220)
+
+
+  
+ActionView::Template::Error (couldn't find file './vendor/stylesheets/animate/animate.css' under '/home/mavo/Documents/FoodStoreApps/app/assets/stylesheets' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:14:56 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.8ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 851)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.8ms | Allocations: 7460)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate.css' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:19:51 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 756)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.5ms | Allocations: 7324)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate.css' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:20:49 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 756)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms | Allocations: 7291)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate.css' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:21:17 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 756)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms | Allocations: 7319)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:21:47 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (4.7ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 756)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.7ms | Allocations: 4848)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate/animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:22:29 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 756)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms | Allocations: 7319)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:23:00 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.4ms | Allocations: 11766)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:25:10 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (1.1ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 757)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.1ms | Allocations: 7323)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:28:13 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 756)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms | Allocations: 7283)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascript
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/stylesheets
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/lib/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:18
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:32:19 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 756)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 9290672e441b7536e96e
+Version: webpack 4.43.0
+Time: 2864ms
+Built at: 12/05/2020 20:32:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-de9cb5945e00f57baf12.js    843 KiB  application  [emitted] [immutable]  application
+js/application-de9cb5945e00f57baf12.js.map    898 KiB  application  [emitted] [dev]        application
+           js/main-13e913a1308548ec4c13.js    419 KiB         main  [emitted] [immutable]  main
+       js/main-13e913a1308548ec4c13.js.map    404 KiB         main  [emitted] [dev]        main
+                             manifest.json  654 bytes               [emitted]              
+Entrypoint application = js/application-de9cb5945e00f57baf12.js js/application-de9cb5945e00f57baf12.js.map
+Entrypoint main = js/main-13e913a1308548ec4c13.js js/main-13e913a1308548ec4c13.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 913 bytes {application} [built]
+[./app/javascript/packs/main.js] 6.23 KiB {main} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+ERROR in ./app/javascript/packs/application.js
+Module not found: Error: Can't resolve 'bootstrap' in '/home/mavo/Documents/FoodStoreApps/app/javascript/packs'
+ @ ./app/javascript/packs/application.js 21:0-19
+
+Completed 200 OK in 6618ms (Views: 6616.7ms | ActiveRecord: 0.4ms | Allocations: 13663)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:37:14 +0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.7ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1720)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 686ms (Views: 671.2ms | ActiveRecord: 3.3ms | Allocations: 60379)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:41:52 +0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.7ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 1720)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 2.6ms | Allocations: 12152)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate/animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:42:05 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 792)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.5ms | Allocations: 9828)
+
+
+  
+ActionView::Template::Error (couldn't find file 'animate' with type 'text/css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css:17
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:42:50 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.6ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 766)
+Completed 500 Internal Server Error in 542ms (ActiveRecord: 0.6ms | Allocations: 72860)
+
+
+  
+ActionView::Template::Error (couldn't find file 'carousel/owl.theme.source.css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:45:56 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (1.0ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 756)
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 1.0ms | Allocations: 32782)
+
+
+  
+ActionView::Template::Error (couldn't find file 'carousel/owl.theme.source.css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:47:57 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 766)
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.5ms | Allocations: 34869)
+
+
+  
+ActionView::Template::Error (couldn't find file 'carousel/owl.theme.source.css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:49:13 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 504ms (Views: 502.1ms | ActiveRecord: 0.5ms | Allocations: 83374)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:51:02 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.5ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 757)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.5ms | Allocations: 47192)
+
+
+  
+ActionView::Template::Error (couldn't find file 'owl.theme.source.css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:51:37 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 756)
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 0.4ms | Allocations: 39728)
+
+
+  
+ActionView::Template::Error (couldn't find file 'owl.theme.source.css'
+Checked in these paths: 
+  /home/mavo/Documents/FoodStoreApps/app/assets/config
+  /home/mavo/Documents/FoodStoreApps/app/assets/images
+  /home/mavo/Documents/FoodStoreApps/app/assets/stylesheets
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/fonts
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/icofont
+  /home/mavo/Documents/FoodStoreApps/vendor/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actioncable-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activestorage-6.0.3/app/assets/javascripts
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionview-6.0.3/lib/assets/compiled
+  /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/mavo/Documents/FoodStoreApps/node_modules
+  /home/mavo/Documents/FoodStoreApps/vendor):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:51:52 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.6ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 756)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 274ms (Views: 271.5ms | ActiveRecord: 0.6ms | Allocations: 43954)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 20:53:48 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mResto Load (0.9ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 758)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 305ms (Views: 303.0ms | ActiveRecord: 0.9ms | Allocations: 42660)
+
+
+Started GET "/clients/sign_in" for 127.0.0.1 at 2020-05-12 20:53:50 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 6.8ms | Allocations: 595)
+  Rendered /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 238.7ms | Allocations: 4675)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 480ms (Views: 284.6ms | ActiveRecord: 177.1ms | Allocations: 16287)
+
+
+Started GET "/clients/sign_in" for 127.0.0.1 at 2020-05-12 20:59:16 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered /home/mavo/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1034)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration.entry should be one of these:
+   function | object { <key>: non-empty string | [non-empty string] } | non-empty string | [non-empty string]
+   -> The entry point(s) of the compilation.
+   Details:
+    * configuration.entry['jquery'] should be a string.
+      -> The string is resolved to a module which is loaded upon startup.
+    * configuration.entry['jquery'] should be an array:
+      [non-empty string]
+      -> A non-empty array of non-empty strings
+    * configuration.entry['jquery'] should be one of these:
+      [non-empty string]
+      -> All modules are loaded upon startup. The last one is exported.
+    * configuration.entry['jquery'] should be one of these:
+      non-empty string | [non-empty string]
+      -> An entry point with name
+
+Completed 200 OK in 5422ms (Views: 5420.6ms | ActiveRecord: 0.0ms | Allocations: 8178)
+
+
+Started POST "/clients/sign_in" for 127.0.0.1 at 2020-05-12 21:00:46 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"a6BsydV0HnFmPqxG5SQnSsOL7RER42zrMeYzhTzT2fVLSsRliujKd1MHYuc4Qrzwu4uneNOX3la3hfixfd4jcQ==", "client"=>{"email"=>"tsiry.razanakoto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mClient Load (28.9ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."email" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["email", "tsiry.razanakoto@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 476ms (ActiveRecord: 29.2ms | Allocations: 4992)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 21:00:46 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/restos/index.html.erb:1
+  [1m[36mResto Load (0.4ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:22
+  Rendered restos/index.html.erb within layouts/application (Duration: 30.7ms | Allocations: 1597)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.9ms | Allocations: 7227)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 21:03:55 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mClient Load (0.8ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/restos/index.html.erb:1
+  [1m[36mResto Load (0.8ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:18
+  Rendered restos/index.html.erb within layouts/application (Duration: 43.1ms | Allocations: 7512)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1037ms (Views: 1013.8ms | ActiveRecord: 11.5ms | Allocations: 157445)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-12 21:07:00 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/restos/index.html.erb:1
+  [1m[36mResto Load (1.2ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:18
+  Rendered restos/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1981)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 62.1ms | ActiveRecord: 1.7ms | Allocations: 8628)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/slide/slide-3.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/slide/slide-1.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-05-12 21:10:31 +0300
+Processing by RestosController#index as HTML
+  Rendering restos/index.html.erb within layouts/application
+  [1m[36mClient Load (0.6ms)[0m  [1m[34mSELECT "clients".* FROM "clients" WHERE "clients"."id" = $1 ORDER BY "clients"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/restos/index.html.erb:1
+  [1m[36mResto Load (0.6ms)[0m  [1m[34mSELECT "restos".* FROM "restos"[0m
+  ↳ app/views/restos/index.html.erb:18
+  Rendered restos/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 2927)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 1.5ms | Allocations: 9605)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/slide/slide-3.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/specials-3.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/specials-4.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/specials-1.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/specials-2.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/event-birthday.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/event-private.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/event-custom.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/gallery/gallery-1.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/fonts/boxicons.woff2" for 127.0.0.1 at 2020-05-12 21:10:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/boxicons.woff2"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/specials-5.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/gallery/gallery-2.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/slide/slide-1.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/gallery/gallery-3.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/fonts/boxicons.woff" for 127.0.0.1 at 2020-05-12 21:10:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/boxicons.woff"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/specials-1.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/gallery/gallery-5.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/gallery/gallery-6.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/gallery/gallery-7.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/gallery/gallery-4.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/chefs/chefs-1.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/gallery/gallery-8.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/chefs/chefs-2.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/chefs/chefs-3.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/img/chefs-bg.jpg" for 127.0.0.1 at 2020-05-12 21:10:35 +0300
+Started GET "/fonts/boxicons.ttf" for 127.0.0.1 at 2020-05-12 21:10:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/boxicons.ttf"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/img/chefs-bg.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/img/testimonials-bg.jpg" for 127.0.0.1 at 2020-05-12 21:10:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/img/events-bg.jpg" for 127.0.0.1 at 2020-05-12 21:10:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/img/events-bg.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/slide/slide-3.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/specials-3.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/specials-2.jpg"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.3) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.3) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

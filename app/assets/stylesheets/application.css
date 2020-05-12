@@ -16,26 +16,13 @@
  *= require style
  *= require animate/animate
  *= require animate/animate.min
-
- *= require css/bootstrap-grid
- *= require css/bootstrap-grid.min
- *= require css/bootstrap-reboot
- *= require css/bootstrap-reboot.min
- *= require css/bootstrap
- *= require css/bootstrap.min
+ *= require boxicons/animations
+ *= require boxicons/boxicons
+ *= require boxicons/boxicons.min
+ *= require boxicons/transformations
+ *= require owl.carousel
+ *= require owl.carousel.min
+ *= require venobox
+ *= require venobox.min
  
- *= require css/boxicons
- *= require css/boxicons.min
- *= require css/transformations
-
- *= require venobox/venobox
- *= require venobox/venobox.min
-
- *= require owl.carousel/assets/owl.carousel
- *= require owl.carousel/assets/owl.carousel.min
- *= require owl.carousel/assets/owl.theme.default
- *= require owl.carousel/assets/owl.theme.default.min
- *= require owl.carousel/assets/owl.theme.green
- *= require owl.carousel/assets/owl.theme.green.min
-
  */
