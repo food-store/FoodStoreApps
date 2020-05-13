@@ -7,17 +7,27 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%
+=begin%>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+<%
+=end%>
+
   </head>
 
   <body>
-     <nav>
-      <%= render 'layouts/navigation' %>
-     </nav> 
-
+    <%= render 'layouts/navigation' %> 
     <%= yield %>
-    
     </footer>
       <%= render 'layouts/footer' %>
     </footer>
+
+<%
+=begin%>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script> 
+<%
+=end%>
+
   </body>
 </html>
