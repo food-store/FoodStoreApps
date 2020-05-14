@@ -4,12 +4,12 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('/app/assets/fonts/boxicons.eot');
-    src: url('/app/assets/fonts/boxicons.eot') format('embedded-opentype'),
-    url('app/assets/fonts/boxicons.woff2') format('woff2'),
-    url('app/assets/fonts/boxicons.woff') format('woff'),
-    url('app/assets/fonts/boxicons.ttf') format('truetype'),
-    url('app/assets/fonts/boxicons.svg?#boxicons') format('svg');
+    src: url('../fonts/boxicons.eot');
+    src: url('../fonts/boxicons.eot') format('embedded-opentype'),
+    url('../fonts/boxicons.woff2') format('woff2'),
+    url('../fonts/boxicons.ttf') format('truetype'),
+    url('../fonts/boxicons.woff') format('woff'),
+    url('../fonts/boxicons.svg?#boxicons') format('svg');
 }
 
 .bx
@@ -19,11 +19,8 @@
     font-style: normal;
     font-variant: normal;
     line-height: 1;
-
     display: inline-block;
-
     text-transform: none;
-
     speak: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

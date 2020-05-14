@@ -16,25 +16,22 @@
           <li><a href="#specials">Specials</a></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#chefs">Chefs</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
 
-          <li class="book-a-table text-center">
-
-              <%if client_signed_in?%>
-                <ul >
-                  <li><%= link_to "Se deconnecter", destroy_client_session_path, method:"delete" %></li> 
-                </ul>
-              <% else %>
-                <ul>
-                  <li><%= link_to "Se connecter", new_client_session_path%></li> 
-                  <li><%= link_to "S'inscrire", new_client_registration_path%></li> 
-                </ul>
-              <% end %>
+          <li class="book-a-table text-center"><a href="#" style="width:13em;">Connexion</a>
             
+            <%if client_signed_in?%>   
+              <ul class="drop-menu menu-4">           
+                <li class="b"><%= link_to "Se deconnecter", destroy_client_session_path, method:"delete"%></li> 
+              </ul>
+            <% else %>
+              <ul class="drop-menu menu-4">
+                <li><%= link_to "Se connecter", new_client_session_path %></li> 
+                <li><%= link_to "S'inscrire", new_client_registration_path %></li> 
+              </ul>
+            <% end %> 
+          
           </li>
         </ul>
       </nav><!-- .nav-menu -->
-
     </div>
   </header><!-- End Header -->

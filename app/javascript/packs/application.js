@@ -16,16 +16,12 @@ require("jquery")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import 'bootstrap'
 
-document.addEventListener("turbolinks:load", () => {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
+//= require main
 //= require carousel/owl.carousel
 //= require carousel/owl.carousel.min
-//= require isotope.pkgd
-//= require isotope.pkgd.min
+//= require isotope-layout/isotope.pkgd
+//= require isotope-layout/isotope.pkgd.min
 //= require jquery/jquery.min
 //= require jquery-sticky/jquery.sticky
 //= require jquery.easing/jquery.easing.min

@@ -917,7 +917,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+  background: url(events-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1062,6 +1062,10 @@ section {
   padding: 15px;
 }
 
+#VideoImage{
+   background-image: url('about.jpg'); 
+}
+
 .book-a-table .php-email-form .loading:before {
   content: "";
   display: inline-block;
@@ -1127,7 +1131,7 @@ section {
 # Chefs
 --------------------------------------------------------------*/
 .chefs {
-  background: url("../img/chefs-bg.jpg") center center no-repeat;
+  background: url("chefs-bg.jpg") center center no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -1234,7 +1238,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("/testimonials/testimonials-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1498,10 +1502,6 @@ section {
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
-}
-
-#test{
-  background-image: url(/slide/slide-1.jpg);
 }
 
 #footer h3 {
