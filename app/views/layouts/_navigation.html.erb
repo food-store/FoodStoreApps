@@ -3,7 +3,7 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span><%= image_tag  "logo.svg" %></span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span>FoodStore</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -21,7 +21,7 @@
             
             <%if client_signed_in?%>   
               <ul class="drop-menu menu-4">           
-                <li class="b"><%= link_to "Se deconnecter", destroy_client_session_path, method:"delete"%></li> 
+                <li><%= link_to "Se deconnecter", destroy_client_session_path, method:"delete"%></li> 
               </ul>
             <% else %>
               <ul class="drop-menu menu-4">
