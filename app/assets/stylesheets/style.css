@@ -75,8 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background-color: rgba(0, 0, 0, 0.637);
-  top: 5px;
+  background-color: rgba(0, 0, 0, 0.836);
   height: 70px;
   z-index: 997;
   transition: all 0.5s;
