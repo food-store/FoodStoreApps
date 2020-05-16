@@ -11,6 +11,16 @@
 	border-radius: 10px;
 }
 
+#connecter{
+	border: none;
+	background: none;
+	color: rgb(0, 188, 235);
+}
+
+#connecter:hover{
+	color: white;
+}
+
 #log{
 	align-content: center;
 }
