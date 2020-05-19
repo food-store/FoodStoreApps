@@ -1,9 +1,5 @@
-/**
-* Template Name: Delicious - v2.0.1
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+console.log("test");
 !(function($) {
   "use strict";
 

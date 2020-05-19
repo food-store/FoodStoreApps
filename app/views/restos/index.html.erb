@@ -2,15 +2,20 @@
   <section id="hero">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-        <div class="carousel-inner" role="listbox">
-
           <!-- Slide 1 -->
-          <div class="carousel-item active" id="test">
-          <%= image_tag  "slide/slide-1.jpg" %>
-            <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag  "slide/slide-1.jpg", :class => "d-block w-100" %>
+               <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2>
                 <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
@@ -22,50 +27,41 @@
             </div>
           </div>
 
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animated fadeIn scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
+           <!-- Slide 2 -->
+            <div class="carousel-item">
+              <%= image_tag  "slide/slide-2.jpg", :class => "d-block w-100" %>
+                <div class="carousel-container">
+                  <div class="carousel-content">
+                    <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2>
+                    <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                    <div>
+                      <a href="#menu" class="btn-menu animated fadeIn scrollto">Our Menu</a>
+                      <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <%= image_tag  "slide/slide-3.jpg", :class => "d-block w-100" %>
+               <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2>
+                  <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                  <div>
+                    <a href="#menu" class="btn-menu animated fadeIn scrollto">Our Menu</a>
+                    <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
+                  </div>
+                </div>
+            </div>
             </div>
           </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background: url(assets/img/slide/slide-3.jpg);">
-            <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animated fadeIn scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -80,7 +76,6 @@
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
             <div class="content">
               <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
               <p>
@@ -101,13 +96,11 @@
                 culpa qui officia deserunt mollit anim id est laborum
               </p>
             </div>
-
           </div>
-
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- End About Section -->
 
     <!-- ======= Whu Us Section ======= -->
     <section id="why-us" class="why-us">
@@ -149,6 +142,9 @@
       </div>
     </section>
  
+    <!-- ################## -->
+       <!--  Back Menja  -->
+    <!-- ##################  -->
   <% @restaurants.each do |resto|%>
     <ul>
       <li>Nom :  <%= resto.name %></li>

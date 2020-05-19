@@ -1,16 +1,3 @@
-/*
- * VenoBox - jQuery Plugin
- * version: 1.8.9
- * @requires jQuery >= 1.7.0
- *
- * Examples at http://veno.es/venobox/
- * License: MIT License
- * License URI: https://github.com/nicolafranchini/VenoBox/blob/master/LICENSE
- * Copyright 2013-2020 Nicola Franchini - @nicolafranchini
- *
- */
-
-/* global jQuery */
 
 (function($){
     "use strict";
