@@ -24,9 +24,7 @@
                       
                     <i class="fa fa-key"></i>
                   </div>
-                    
-                          <%= render "devise/shared/error_messages", resource: resource %>
-               
+
                       <%= f.submit "S'inscrire", :class => 'btn btn-success btn-block shadow border-0 py-2 text-uppercase' %>                                
 
                   <p class="text-center mt-5">
@@ -35,14 +33,14 @@
                         <%= render "devise/shared/links" %>  
                       </span>
                   </p>
-
               </div>
-
           </div>
           <div class="col-md-6">
               <div class="AppFormRight position-relative d-flex justify-content-center flex-column align-items-center text-center p-5 text-white">
                   <h2 class="position-relative px-4 pb-3 mb-4">Welcome</h2>
-                  <p>Lorem ipsuing elit. Molomos totam est voluptatum i omos totam est voluptatum i ure sit consectetur ill</p>
+                  <p>Lorem ipsuing elit. Molomos totam est voluptatum i omos totam est voluptatum i ure sit consectetur ill
+                  <%= render "devise/shared/error_messages", resource: resource %>
+                  </p>
               </div>
           </div>
         </div>

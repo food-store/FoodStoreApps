@@ -1,5 +1,4 @@
 
-console.log("test");
 !(function($) {
   "use strict";
 

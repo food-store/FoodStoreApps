@@ -13,5 +13,6 @@ require("jquery")
 //= require jquery.easing/jquery.easing.min
 //= require venobox
 //= require venobox.min
+//= require popup
 
 //= require_tree .
