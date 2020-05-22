@@ -1,5 +1,11 @@
-<p>Welcome <%= @email %>!</p>
 
-<p>You can confirm your account email through the link below:</p>
 
-<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<p>Bonjour !<br>
+Nous sommes très heureux de vous compter parmi la communauté Foodstore.<br>
+Pour confirmer votre adresse email, veuillez cliquer le boutton ci-dessous!<br>
+Voici les <a href="#" target="_blank"><strong>conditions générales d'utilisation</strong></a> de la plateforme que vous avez acceptées.<br>
+À très bientôt !</span></p>
+
+<p><%= link_to 'Confirmer mon email', confirmation_url(@resource, confirmation_token: @token), class:"btn btn-primary"%></p>
+
+
