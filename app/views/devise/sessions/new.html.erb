@@ -1,32 +1,33 @@
-<div class="container h-100">
-  <div class=" h-100 justify-content-center align-items-center">
-    <div class="login-box">
-         <h2>Se connecter</h2>
-         <%= render "devise/shared/error_messages", resource: resource %>
+<body id="bg-img">   
+   <div class="container h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+       
+        <div class="wrapper">
+         <h2 style ="margin: 1em;color:white";>Se connecter</h2>
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>               
+            
+              <%= f.email_field :email, autofocus: true, :placeholder => 'Email' %>
 
-       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-            <div class="user-box">   
-              <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-              <%= f.label :email %>
-            </div>
-
-            <div class="user-box">
-              <%= f.password_field :password, autocomplete: "current-password" %>
-              <%= f.label :password %>
-            </div>
-              
-            <% if devise_mapping.rememberable? %>
-              <a href="" class="d-flex justify-content-center">
-                <%= f.submit "Connecter", :id => 'connecter' %>  
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </a>
+              <%= f.password_field :password, :placeholder => 'Mot de passe' %> 
+              <%= f.submit "Connecter", :id => 'login-button' %>                    
+                   
+               <%= render "devise/shared/error_messages", resource: resource %>
+            <%= render "devise/shared/links" %> 
             <% end %>
-       <% end %>
-    <br>   
-       <%= render "devise/shared/links" %> 
-    </div>
+      <ul class="bg-bubbles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+     
+      </div>
   </div>
 </div>
+</body>   
