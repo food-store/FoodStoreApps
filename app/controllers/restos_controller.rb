@@ -20,4 +20,5 @@ class RestosController < ApplicationController
 
   def destroy
   end
+
 end
