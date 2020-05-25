@@ -44,7 +44,7 @@ body :-ms-input-placeholder {
   background: linear-gradient(top left, #000000e8 0%, #000000e1 100%);
   background: linear-gradient(to bottom right, #13131386 0%, #000000e3 100%);
   width: 48%;
-  height: 400px;
+  height: 28em;
   overflow: hidden;
   text-align: center;
   border-radius: 20px;
