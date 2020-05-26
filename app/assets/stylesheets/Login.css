@@ -48,14 +48,27 @@ body :-ms-input-placeholder {
   overflow: hidden;
   text-align: center;
   border-radius: 20px;
+  padding: 3em;
 }
 .wrapper.form-success .container h1 {
           transform: translateY(85px);
 }
 
+.link{
+  margin-top:2em;
+  margin-bottom: 1em;
+}
+
+div.link > a{
+  padding: 1em;
+}
+
+div.link > a:nth-child(2){
+  padding: 4px 2em;
+  border-left: 3px solid;
+}
 
 form {
-  padding: 20px 0;
   position: relative;
   z-index: 2;
 }

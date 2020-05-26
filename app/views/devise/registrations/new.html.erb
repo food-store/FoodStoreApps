@@ -6,7 +6,7 @@
           <div class="col-md-6 d-flex justify-content-center align-items-center">
               <div class="AppFormLeft">
 
-                  <h1>Inscription</h1>
+                  <h1 style="padding: 8px;">Inscription</h1>
                   <div class="form-group position-relative mb-4">
                       
                         <%= f.email_field :email, autofocus: true, autocomplete: "email", :class =>'form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none', :id => 'username', placeholder: 'Adresse email'  %>
@@ -29,9 +29,6 @@
 
                   <p class="text-center mt-5">
                       Vous avez un compte?
-                      <span>
-                        <%= render "devise/shared/links" %>  
-                      </span>
                   </p>
               </div>
           </div>
