@@ -89,14 +89,21 @@ form input {
           transition-duration: 0.25s;
   font-weight: 300;
 }
-form input:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+
+/*#################################*/
+/*    Hover formulaire animation  */
+/*#################################*/
+
+/* form input:hover {
+  background-color: rgba(36, 36, 36, 0.4);
 }
 form input:focus {
-  background-color: rgb(27, 27, 27);
+  background-color: rgba(91, 91, 90, 0.51);
   width: 300px;
   color: #ffffff;
-}
+} */
+
+
 form button {
           appearance: none;
   outline: 0;
@@ -213,4 +220,10 @@ body#bg-img{
   background-image: url("about");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.btn{
+  width:auto;
+  margin-top:1em;
+  padding:10px;
 }

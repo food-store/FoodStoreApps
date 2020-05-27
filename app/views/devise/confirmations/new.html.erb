@@ -3,7 +3,7 @@
       <div class="row h-100 justify-content-center align-items-center">
        
         <div class="wrapper">
-         <h2 style ="margin: 1em;color:white";>Resend confirmation instructions</h2>
+         <h2 style ="margin: 1em;color:white";>Renvoyé le message de confirmation </h2>
 
 <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
   
@@ -13,7 +13,7 @@
   
 
       
-              <%= f.submit "Envoyé un numéro de confirmation", :id => 'login-button'  %>                
+              <%= f.submit "Envoyé un numéro de confirmation", :class => 'btn btn-outline-success'  %>                
                    
                <%= render "devise/shared/error_messages", resource: resource %>
             <%= render "devise/shared/links" %> 

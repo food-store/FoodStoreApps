@@ -9,7 +9,7 @@
               <%= f.email_field :email, autofocus: true, :placeholder => 'Email' %>
 
               <%= f.password_field :password, :placeholder => 'Mot de passe' %> 
-              <%= f.submit "Connecter", :id => 'login-button' %>                    
+              <%= f.submit "Connecter", :class => 'btn btn-outline-success' %>                    
                    
                <%= render "devise/shared/error_messages", resource: resource %>
             <%= render "devise/shared/links" %>
