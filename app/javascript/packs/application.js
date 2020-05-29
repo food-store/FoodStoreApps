@@ -12,7 +12,7 @@ require("jquery")
 //= require jquery-sticky/jquery.sticky
 //= require jquery.easing/jquery.easing.min
 //= require venobox
-//= require venobox.min
+//= require venobox.mi
 //= require popup
 
 //= require_tree .
