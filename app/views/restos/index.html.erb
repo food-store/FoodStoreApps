@@ -4,7 +4,7 @@
       <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-          <!-- Slide 1 -->
+        <!-- Slide 1 -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -15,37 +15,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <%= image_tag  "slide/slide-1.jpg", :class => "d-block" %>
-               <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2>
-                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                <div>
-                  <a href="#menu" class="btn-menu animated fadeIn scrollto">Our Menu</a>
-                  <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-           <!-- Slide 2 -->
-            <div class="carousel-item">
-              <%= image_tag  "slide/slide-2.jpg", :class => "d-block w-100" %>
-                <div class="carousel-container">
-                  <div class="carousel-content">
-                    <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2>
-                    <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                    <div>
-                      <a href="#menu" class="btn-menu animated fadeIn scrollto">Our Menu</a>
-                      <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <%= image_tag  "slide/slide-3.jpg", :class => "d-block w-100" %>
-               <div class="carousel-container">
+              <div class="carousel-container">
                 <div class="carousel-content">
                   <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2>
                   <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
@@ -54,7 +24,37 @@
                     <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
                   </div>
                 </div>
+              </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <%= image_tag  "slide/slide-2.jpg", :class => "d-block w-100" %>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2>
+                  <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                  <div>
+                    <a href="#menu" class="btn-menu animated fadeIn scrollto">Our Menu</a>
+                    <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <%= image_tag  "slide/slide-3.jpg", :class => "d-block w-100" %>
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2>
+                  <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                  <div>
+                    <a href="#menu" class="btn-menu animated fadeIn scrollto">Our Menu</a>
+                    <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Book a Table</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -102,6 +102,10 @@
       </div>
     </section>
     <!-- End About Section -->
+
+    <!-- List restaurants -->
+    <%= render 'parse/allrestaurants' %> 
+
     <%= render 'parse/index' %> 
     <!-- ======= Whu Us Section ======= -->
     <section id="why-us" class="why-us">
@@ -142,17 +146,3 @@
 
       </div>
     </section>
- 
- 
-    
-    <!-- ################## -->
-       <!--  Back Menja  -->
-    <!-- ##################  -->
-  <% @restaurants.each do |resto|%>
-    <ul>
-      <li>Nom :  <%= resto.name %></li>
-      <li>Description :  "<%= resto.description %>"</li>
-      <li>Adresse :  <%= resto.adress%></li>
-      <button><a href="<%= resto_path(resto.id) %>">Visiter</a></button>
-    </ul>
-  <%end%>
