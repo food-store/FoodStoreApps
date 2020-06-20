@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'orders/reservation/:idResto', to: "orders#index", as:"reservation"
+    get '/addperson', to: "orders#addperson", as:"addperson"
+
   # Page d'accueil
   root to:'restos#index'
 

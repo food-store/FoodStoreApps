@@ -21,7 +21,7 @@
                 <p class="animated fadeInUp"><%= @restaurant.description %></p>
                 <div>
                   <a href="<%= restaurants_menus_path(@restaurant.id) %>" class="btn-menu animated fadeIn scrollto">Nos menus</a>
-                  <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Réserver</a>
+                  <a href="<%= reservation_path(@restaurant.id) %>" class="btn-book animated fadeIn scrollto">Réserver</a>
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@
                 <p class="animated fadeInUp"><%= @restaurant.adress %></p>
                 <div>
                   <a href="<%= restaurants_menus_path(@restaurant.id) %>" class="btn-menu animated fadeIn scrollto">Nos menus</a>
-                  <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Réserver</a>
+                  <a href="<%= reservation_path(@restaurant.id) %>" class="btn-book animated fadeIn scrollto">Réserver</a>
                 </div>
               </div>
             </div>
@@ -51,7 +51,7 @@
                 <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
                   <a href="<%= restaurants_menus_path(@restaurant.id) %>" class="btn-menu animated fadeIn scrollto">Nos menus</a>
-                  <a href="#book-a-table" class="btn-book animated fadeIn scrollto">Réserver</a>
+                  <a href="<%= reservation_path(@restaurant.id) %>" class="btn-book animated fadeIn scrollto">Réserver</a>
                 </div>
               </div>
             </div>
@@ -135,5 +135,3 @@
 
   </div>
 </section><!-- End Chefs Section -->
-
-        <%= javascript_tag 'custom', 'data-turbolinks-track': 'reload' %>
