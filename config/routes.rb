@@ -12,7 +12,11 @@ Rails.application.routes.draw do
   devise_for :clients, controllers: {
   	confirmations: 'confirmations' 
   }
-
+  
+  devise_scope :client do  
+   get '/clients/sign_out' => 'devise/sessions#destroy'     
+end
+  
   # menus
   get '/menus/:idResto', to: "menus#restomenus", as:"restaurants_menus"
   get '/menus/:id', to: "menus#show", as:"menu"
