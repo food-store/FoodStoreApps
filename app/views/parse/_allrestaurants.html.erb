@@ -1,0 +1,28 @@
+<!-- ======= restaurants lists ======= -->
+<section id="why-us" class="why-us">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Choose <span>Your Restaurant</span></h2>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div>
+
+    <div class="row">
+      <% @restaurants.each do |resto|%>
+
+      <div class="col-lg-4 mt-4 mt-lg-0">
+        <a href="<%= resto_path(resto.id) %>">
+          <div class="box">
+            <span><%= resto.name %></span>
+            <h4><%= resto.adress %></h4>
+            <p><%= resto.description %></p>
+          </div>
+        </a>
+      </div>
+      
+      <%end%>
+    </div>
+
+  </div>
+</section>
+

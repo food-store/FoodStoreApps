@@ -1,42 +1,40 @@
 <body id="bg-img">   
-   <div class="container h-100">
-      <div class="row h-100 justify-content-center align-items-center">
-       
-        <div class="wrapper">
-         <h2 style ="margin: 1em;color:white";>Renvoyé le message de confirmation </h2>
+ <div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
 
-<%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
-  
+    <div class="wrapper">
+     <h2 style ="margin: 1em;color:white";>Renvoyé le message de confirmation </h2>
 
-              <%= f.label :email , :class => "text-white" %>
-              <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) , :placeholder => "Saisir votre email"%>
-  
+     <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
 
-      
-              <%= f.submit "Envoyé un numéro de confirmation", :class => 'btn btn-outline-success'  %>                
-                   
-               <%= render "devise/shared/error_messages", resource: resource %>
-            <%= render "devise/shared/links" %> 
-            <% end %>
-      <ul class="bg-bubbles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-      </ul>
-     
-      </div>
+
+     <%= f.label :email , :class => "text-white" %>
+     <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) , :placeholder => "Saisir votre email"%>
+
+
+
+     <%= f.submit "Envoyé un numéro de confirmation", :class => 'btn btn-outline-success'  %>                
+
+     <%= render "devise/shared/error_messages", resource: resource %>
+     <%= render "devise/shared/links" %> 
+     <% end %>
+     <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
   </div>
+</div>
 </div>
 </body>   
 
 
 
 
- 

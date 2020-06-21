@@ -1,0 +1,53 @@
+
+<div class="container" style="margin-top: 6%;">
+	<div class="row">
+
+		<!-- Entrées -->
+		<% unless @entrees.empty? %>
+		<div class="col-sm-4">
+			<h1>Entrées</h1>
+
+			<% @entrees.each do |entree|%>
+			<h4><%= entree.name %></h4>
+			<ul>
+				<li> <i>Description : </i> <%= entree.description %></li>
+				<li> <i>Prix : </i> <%= entree.price %> Ar</li>
+				<li> <i>Temps de préparation : </i> <%= entree.duration %> min</li>
+			</ul>
+			<%end%>
+		</div>
+		<%end%>
+
+		<!-- Résistances -->
+		<% unless @resistances.empty? %>
+		<div class="col-sm-4">
+			<h1>Résistances</h1>
+
+			<% @resistances.each do |plat|%>
+			<h4><%= plat.name %></h4>
+			<ul> 
+				<li> <i>Description : </i> <%= plat.description %></li>
+				<li> <i>Prix : </i> <%= plat.price %> Ar</li>
+				<li> <i>Temps de préparation : </i> <%= plat.duration %> min</li>
+			</ul>
+			<%end%>
+		</div>
+		<%end%>
+
+		<!-- Desserts -->
+		<% unless @desserts.empty? %>
+		<div class="col-sm-4">
+			<h1>Desserts</h1>
+
+			<% @desserts.each do |dessert|%>
+			<h4><%= dessert.name %></h4>
+			<ul> 
+				<li> <i>Description : </i> <%= dessert.description %></li>
+				<li> <i>Prix : </i> <%= dessert.price %> Ar</li>
+				<li> <i>Temps de préparation : </i> <%= dessert.duration %> min</li>
+			</ul>
+			<%end%>
+		</div>
+		<%end%>
+	</div>
+</div>

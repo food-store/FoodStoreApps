@@ -4,6 +4,7 @@ class RestosController < ApplicationController
   end
 
   def show
+    @restaurant = Resto.find(params[:id])
   end
 
   def new
