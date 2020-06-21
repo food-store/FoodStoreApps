@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_07_124859) do
+ActiveRecord::Schema.define(version: 2020_06_18_161059) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,38 @@ ActiveRecord::Schema.define(version: 2020_05_07_124859) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_clients_on_email", unique: true
     t.index ["reset_password_token"], name: "index_clients_on_reset_password_token", unique: true
+  end
+
+  create_table "menu_restos", force: :cascade do |t|
+    t.bigint "menu_id"
+    t.bigint "resto_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["menu_id"], name: "index_menu_restos_on_menu_id"
+    t.index ["resto_id"], name: "index_menu_restos_on_resto_id"
+  end
+
+  create_table "menus", force: :cascade do |t|
+    t.string "category"
+    t.string "name"
+    t.string "description"
+    t.integer "price"
+    t.integer "duration"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string "date"
+    t.string "hour"
+    t.string "message"
+    t.string "status"
+    t.bigint "client_id"
+    t.bigint "resto_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["client_id"], name: "index_orders_on_client_id"
+    t.index ["resto_id"], name: "index_orders_on_resto_id"
   end
 
   create_table "restos", force: :cascade do |t|

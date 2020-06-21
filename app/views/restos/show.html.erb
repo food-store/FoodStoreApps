@@ -1,65 +1,137 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div class="hero-container">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-    <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs">
-      <div class="container">
+      <!-- Slide 1 -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
 
-        <div class="section-title">
-          <h2>Our Proffesional <span>Chefs</span></h2>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <%= image_tag  "slide/slide-1.jpg", :class => "d-block" %>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown"><span><%= @restaurant.name %></span> Restaurant</h2>
+                <p class="animated fadeInUp"><%= @restaurant.description %></p>
+                <div>
+                  <a href="<%= restaurants_menus_path(@restaurant.id) %>" class="btn-menu animated fadeIn scrollto">Nos menus</a>
+                  <a href="<%= reservation_path(@restaurant.id) %>" class="btn-book animated fadeIn scrollto">Réserver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <%= image_tag  "slide/slide-2.jpg", :class => "d-block w-100" %>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown"><span><%= @restaurant.name %></span> Restaurant</h2>
+                <p class="animated fadeInUp"><%= @restaurant.adress %></p>
+                <div>
+                  <a href="<%= restaurants_menus_path(@restaurant.id) %>" class="btn-menu animated fadeIn scrollto">Nos menus</a>
+                  <a href="<%= reservation_path(@restaurant.id) %>" class="btn-book animated fadeIn scrollto">Réserver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <%= image_tag  "slide/slide-3.jpg", :class => "d-block w-100" %>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown"><span><%= @restaurant.name %></span> Restaurant</h2>
+                <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <div>
+                  <a href="<%= restaurants_menus_path(@restaurant.id) %>" class="btn-menu animated fadeIn scrollto">Nos menus</a>
+                  <a href="<%= reservation_path(@restaurant.id) %>" class="btn-book animated fadeIn scrollto">Réserver</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Master Chef</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Patissier</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cook</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Chefs Section -->
+    </div>
+  </div>
 
+</section>
+<!-- End Hero -->
+
+
+
+<!-- ======= Chefs Section ======= -->
+<section id="chefs" class="chefs">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Proffesional <span>Chefs</span></h2>
+      <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="member">
+          <div class="pic"><img src="chefs/chefs-1.jpg" class="img-fluid" alt="">
+            <%= image_tag  "chefs/chefs-1.jpg", :class => "img-fluid" %>
+          </div>
+          <div class="member-info">
+            <h4>Walter White</h4>
+            <span>Master Chef</span>
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="member">
+          <div class="pic">
+            <%= image_tag  "chefs/chefs-2.jpg", :class => "img-fluid" %>
+          </div>
+          <div class="member-info">
+            <h4>Sarah Jhonson</h4>
+            <span>Patissier</span>
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="member">
+          <div class="pic">
+            <%= image_tag  "chefs/chefs-3.jpg", :class => "img-fluid" %>
+          </div>
+          <div class="member-info">
+            <h4>William Anderson</h4>
+            <span>Cook</span>
+            <div class="social">
+              <a href=""><i class="icofont-twitter"></i></a>
+              <a href=""><i class="icofont-facebook"></i></a>
+              <a href=""><i class="icofont-instagram"></i></a>
+              <a href=""><i class="icofont-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Chefs Section -->
