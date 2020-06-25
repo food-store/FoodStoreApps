@@ -7,6 +7,9 @@
 		<div class="col-sm-9" >
 			<h3>COMMANDES</h3>
 
+			<!-- session js -->
+			<%= form_tag(addperson_path,id:"form-data",'data-menus':"#{@datamenus}", 'data-resto':"#{@resto.id}") do %>
+
 			<i> Nombre des personnes : </i>
 			<a href="javascript:void(0)" class="btn btn-info" id = 'deleteperson'>-</a>
 			<strong><span id = 'nbr_person' data-person=0> 0 </span> </strong>
@@ -18,44 +21,26 @@
 
 			</div>
 
+			<%end%>
 		</div>
 
 		<!-- =====PANIER PANIER ====-->
 
 		<div class="col-sm-3" >
 			<center><h3>PANIER</h3></center>
-			
+			<div id="res-order">
+
+
+			</div>
+<div class="alert alert-info">Prix total : <span id='total_price'>0 Ar</span></div> 
+			<div>
+
+				<%= submit_tag("valider") %>
+			</div>
 		</div>
+
 	</div>
 
-
-</div>
-
-
-<!-- ===========================POUR RECUPERER LES DONNÉES DANS LE CONTROLLER==============-->
-
-
-<!-- Datas entrées -->
-<% unless @entrees.empty? %>
-<% @entrees.each do |entree|%>
-<div class="hidden entrees" data-entrees="<%= entree.name %>"></div>
-<%end%>
-<%end%>
-
-<!-- Datas resistances -->
-<% unless @resistances.empty? %>
-<% @resistances.each do |resistance|%>
-<div class="hidden resistances" data-resistances="<%= resistance.name %>"></div>
-<%end%>
-<%end%>
-
-
-<!-- Datas desserts -->
-<% unless @desserts.empty? %>
-<% @desserts.each do |dessert|%>
-<div class="hidden desserts" data-desserts="<%= dessert.name %>"></div>
-<%end%>
-<%end%>
 
 </div>
 

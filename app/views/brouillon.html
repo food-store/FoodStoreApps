@@ -1,0 +1,335 @@
+
+
+// Nombres des personnes
+
+let addperson = document.getElementById('addperson')
+let deleteperson = document.getElementById('deleteperson')
+addperson.addEventListener('click', addNumber)
+deleteperson.addEventListener('click', deleteNumber)
+
+
+function  addNumber() {
+	let nbr = document.getElementById('nbr_person')
+	let person = document.getElementById('menuPersonne')
+	let nbrPerson = parseInt(nbr.dataset.person)
+
+// function for entreee
+var entreeArray = []
+let entrees = document.querySelectorAll('.entrees')
+entrees.forEach(entree => {
+	entreeArray.push(entree.dataset.entrees)	
+})
+var html = " "
+for (var i = 0; i < entreeArray.length; i++) {
+	html = html+"<ul> <input type=\"checkbox\" id='"+entreeArray[i]+nbrPerson+"'><label for='"+entreeArray[i]+nbrPerson+"'>"+entreeArray[i]+"</label></ul>"
+}
+
+// function for resistances
+var resistanceArray = []
+let resistances = document.querySelectorAll('.resistances')
+resistances.forEach(resistance => {
+	resistanceArray.push(resistance.dataset.resistances)	
+})
+var htmlRes = " "
+for (var i = 0; i < resistanceArray.length; i++) {
+	htmlRes = htmlRes+"<ul> <input type=\"checkbox\" id='"+resistanceArray[i]+nbrPerson+"'><label for='"+resistanceArray[i]+nbrPerson+"'>"+resistanceArray[i]+"</label></ul>"
+}
+
+
+// function for desserts
+var dessertArray = []
+let desserts = document.querySelectorAll('.desserts')
+desserts.forEach(dessert => {
+	dessertArray.push(dessert.dataset.desserts)	
+})
+var htmlDessert = " "
+for (var i = 0; i < dessertArray.length; i++) {
+	htmlDessert = htmlDessert+"<ul> <input type=\"checkbox\" id='"+dessertArray[i]+nbrPerson+"'><label for='"+dessertArray[i]+nbrPerson+"'>"+dessertArray[i]+"</label></ul>"
+}
+
+nbrPerson += 1
+nbr.dataset.person = nbrPerson 
+nbr.textContent = nbrPerson
+let div1 = document.createElement("div")
+div1.classList.add('personne_'+nbrPerson)
+div1.innerHTML = '<h3>Personne n°'+nbrPerson+'</h3><div class="row"><div class="col-sm-4"><h4>Entrée</h4>'+html+'</div><div class="col-sm-4"><h4>Résistance</h4>'+htmlRes+'</div><div class="col-sm-4"><h4>Dessert</h4>'+htmlDessert+'</div></div><hr>'
+person.appendChild(div1)
+
+}
+
+function  deleteNumber() {
+	let nbr = document.getElementById('nbr_person')
+	let nbrPerson = parseInt(nbr.dataset.person)
+	let personadeleters = document.querySelectorAll('.personne_'+nbrPerson)
+	personadeleters.forEach(personadeleter => {
+		personadeleter.parentNode.removeChild(personadeleter);
+	})
+
+	if (nbrPerson > 0) {
+		nbrPerson -= 1
+		nbr.dataset.person = nbrPerson 
+		nbr.textContent = nbrPerson
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Nombres des personnes
+
+let addperson = document.getElementById('addperson')
+let deleteperson = document.getElementById('deleteperson')
+addperson.addEventListener('click', addNumber)
+deleteperson.addEventListener('click', deleteNumber)
+verifySession()
+
+
+function ajoutPersonne(){ /*incremente la valeur inc pour les params*/
+	let nbrePerson = JSON.parse(sessionStorage.getItem("nbrePerson"))
+	nbrePerson++
+	sessionStorage.setItem("nbrePerson",JSON.stringify(nbrePerson))
+	return nbrePerson
+}
+
+// initialiser la session
+function initSession(){
+	sessionStorage.setItem("resOrders","[]")
+	sessionStorage.setItem("nbrePerson","0")
+
+}
+
+// verifier si la session est vide ou pas
+function verifySession(){
+	let isHasMenu = false
+	let resOrders = sessionStorage.getItem("resOrders")
+
+	let jsonOrder = JSON.parse(resOrders);
+	if (resOrders == null || resOrders == ""){
+		initSession()
+		return
+	}else{
+		if (resOrders != null && resOrders != "") {
+			resOrders = JSON.parse(resOrders)
+			for (var i = resOrders.length - 1; i >= 0; i--) {
+				if (resOrders[i].id == null || resOrders[i].category == "" || resOrders[i].name == "" || resOrders[i].description == "" || resOrders[i].price == null || resOrders[i].duration == null) {
+					resOrders.splice(i,1) // null ny commande
+				}else{
+					isHasMenu = true //nisy commande
+				}
+			}
+			sessionStorage.setItem("resOrders",JSON.stringify(resOrders))
+		}	
+	}
+	if (isHasMenu) {
+		// addDomIndex()
+	}
+	else{
+		initSession()
+	}
+}
+
+
+function  addNumber() {
+
+	// Incrementer le nombres
+	let nbr = document.getElementById('nbr_person')
+	let nbrPerson = ajoutPersonne()
+	nbr.dataset.person = nbrPerson 
+	nbr.textContent = nbrPerson
+
+
+
+	let id = nbrPerson // Augmente 1 la session
+	let sessionMenu = JSON.parse(sessionStorage.getItem("resOrders"))
+	sessionMenu.push({id:id,entree:[],resistance:[], dessert:[]})
+	sessionStorage.setItem("resOrders",JSON.stringify(sessionMenu))
+
+	actualiseDomMenu(id)
+}
+
+
+function actualiseDomMenu(id,data=""){
+	// Modification dans le DOM
+	let nbrPerson = id
+	let person = document.getElementById('menuPersonne')
+	let div1 = document.createElement("div")
+	div1.classList.add('personne_'+nbrPerson)
+	div1.innerHTML = valueToHtmlMenu(id)	
+	person.appendChild(div1)
+
+	// Ajout des sous element dans la session 
+	let menuRes = document.querySelectorAll(".checkbox_res")
+	menuRes.forEach(resi => {
+		resi.addEventListener('change',checkMenu);
+
+	});
+
+	// Ajout dans le panier
+	addResInOrder(id)
+}
+
+// fonction principale ajout panier Resistance
+function addResInOrder(id){
+	let divRes = document.getElementById("res-order")
+	let div = document.createElement("div")
+	div.classList = "res-order hidden"
+	div.setAttribute("id","res-list-"+id)
+	div.innerHTML = "<p><span>Résistance personne"+id+" : </p><ul></ul>"
+	divRes.appendChild(div)
+}
+
+// Ajouter  entrées resistances et desserts dans l'html
+
+function valueToHtmlMenu(id, entree="", resistance="", dessert=""){
+
+	let nbrPerson = id
+	let dataHtmlForm = JSON.parse(document.getElementById('form-data').dataset.menus)
+	let htmlEnt = ""
+	let htmlRes = ""
+	let htmlDes = ""
+	for (var i = 0; i < dataHtmlForm.length; i++) {
+
+		if (dataHtmlForm[i][0] == "Entrée") {
+			if (entree.includes(i)) {
+				htmlEnt = htmlEnt+"<input checked class=\"checkbox_menu\"  type=\"checkbox\" id='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'><label for='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'>"+dataHtmlForm[i][1]+"</label>"
+
+			}
+			else{
+				htmlEnt = htmlEnt+"<input class=\"checkbox_menu\"  type=\"checkbox\" id='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'><label for='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'>"+dataHtmlForm[i][1]+"</label>"
+
+			}
+		}
+
+		if (dataHtmlForm[i][0] == "Résistance") {
+			if (resistance.includes(i)) {
+				htmlRes = htmlRes+"<input checked class=\"checkbox_res\" value = \""+dataHtmlForm[i][1]+"\" data-id = \""+nbrPerson+"\" data-idres = \""+dataHtmlForm[i][5]+"\"  type=\"checkbox\" id='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'><label for='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'>"+dataHtmlForm[i][1]+"</label>"
+			}
+			else {
+				htmlRes = htmlRes+"<input class=\"checkbox_res\" value = \""+dataHtmlForm[i][1]+"\" data-id = \""+nbrPerson+"\" data-idres = \""+dataHtmlForm[i][5]+"\" type=\"checkbox\" id='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'><label for='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'>"+dataHtmlForm[i][1]+"</label>"
+			}
+		}
+
+		if (dataHtmlForm[i][0] == "Dessert") {
+			htmlDes = htmlDes+"<input class=\"checkbox_des\"  type=\"checkbox\" id='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'><label for='"+dataHtmlForm[i][0]+dataHtmlForm[i][5]+nbrPerson+"'>"+dataHtmlForm[i][1]+"</label>"
+		}
+	}
+	let menuTitle = '<h3>Personne n°'+id+'</h3><div class="row"><div class="col-sm-4"><h4>Entrée</h4><ul data-ent=\"\">'+htmlEnt+'</ul></div><div class="col-sm-4"><h4>Résistance</h4><ul data-res=\"\" id=\"res_pers'+id+'\">'+htmlRes+'</ul></div><div class="col-sm-4"><h4>Dessert</h4><ul data-des=\"\">'+htmlDes+'</ul></div></div><hr>'
+	return menuTitle
+}
+
+function checkMenu(){
+	let id = JSON.parse(this.dataset.id)
+	let idres = JSON.parse(this.dataset.idres)
+
+	let all_menus = JSON.parse(document.getElementById('form-data').dataset.menus)
+	let sessionRes = JSON.parse(sessionStorage.getItem("resOrders"))
+	let listRes = []
+	if (this.checked) {
+		for (var i = sessionRes.length - 1; i >= 0; i--) {
+			if (sessionRes[i].id == id) {
+				sessionRes[i].resistance.push(idres)
+				listRes = sessionRes[i].resistance
+				break
+			}
+		}
+	}
+
+	else {
+		for (var i = sessionRes.length - 1; i >= 0; i--) {
+			if (sessionRes[i].id == id) {
+
+
+				for (var j = 0; j < sessionRes[i].resistance.length; j++) {
+					if(sessionRes[i].resistance[j] == idres){
+						let elementForDelete = sessionRes[i].resistance.indexOf(idres)
+						sessionRes[i].resistance.splice(elementForDelete,1)
+						listRes = sessionRes[i].resistance
+
+					}
+				}
+			}
+		}
+	}
+	sessionStorage.setItem("resOrders",JSON.stringify(sessionRes))
+// Ajout des element dans le dom
+htmlResMenuOrder(id, listRes, all_menus)
+
+}
+function htmlResMenuOrder(id, listRes, all_menus){
+	let ulList = (document.getElementById("res-list-"+id).getElementsByTagName("ul"))
+	let liList = ""
+	for (var i = 0; i < listRes.length; i++) {
+
+		for (var j = 0; j < all_menus.length; j++) {
+			if (listRes[i] == all_menus[j][5]){
+				liList += "<li>"+all_menus[j][1]+"</li>"
+				ulList[0].innerHTML = liList
+			}
+		}
+	}
+	if (liList == "") {
+		ulList[0].innerHTML = ""
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DELETION
+
+
+function  deleteNumber() {
+	let nbr = document.getElementById('nbr_person')
+	let nbrPerson = JSON.parse(sessionStorage.getItem("nbrePerson"))
+	let personadeleters = document.querySelectorAll('.personne_'+nbrPerson)
+	personadeleters.forEach(personadeleter => {
+		personadeleter.parentNode.removeChild(personadeleter);
+	})
+
+	if (nbrPerson > 0) {
+		nbrPerson -= 1
+		nbr.dataset.person = nbrPerson 
+		nbr.textContent = nbrPerson
+		sessionStorage.setItem("nbrePerson",JSON.stringify(nbrPerson))
+
+	}
+	deleteResInOrder()
+}
+
+function deleteResInOrder(){
+	let a = document.getElementsByClassName("res-order")
+	a[a.length-1].remove()
+}
+
