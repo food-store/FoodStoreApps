@@ -3,9 +3,11 @@ class OrdersController < ApplicationController
 	def index
 		@resto = Resto.find(params[:idResto])
 		@menus = @resto.menus
-		@resistances = @menus.where(category:"Résistance")
-		@entrees = @menus.where(category:"Entrée")
-		@desserts = @menus.where(category:"Dessert")
+		@datamenus = []
+		@menus.each do |menu|
+			@datamenus.push([menu.category,menu.name,menu.description,menu.price,menu.duration,menu.id]) 
+		end
+		puts @resto.id
 	end
 
 	def addperson
