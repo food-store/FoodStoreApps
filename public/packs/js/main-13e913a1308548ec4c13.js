@@ -1,4 +1,6 @@
-/******/ (function(modules) { // webpackBootstrap
+/******/  
+console.log("Js est la");
+(function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
